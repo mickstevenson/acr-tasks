@@ -5,4 +5,4 @@ alias:
     image: docker.io/library/alpine:3.12.0
 steps:
   - cmd: az login --identity
-  - cmd: az acr import --name repo --source image --image image
+  - cmd: az acr import --name {{.Values.registryName}} --source {{.Values.image}} --image {{.Values.image}}
