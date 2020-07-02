@@ -2,7 +2,7 @@ version: v1.1.0
 alias: 
   values:
     repo: colesbasequarantine
+    image: docker.io/library/alpine:3.12.0
 steps:
   - cmd: az login --identity
-  - cmd: az account list --output table
-  - cmd: az acr import --name colesbasequarantine --source docker.io/library/alpine:3.12.0 --image docker.io/library/alpine:3.12.0
+  - cmd: az acr import --name repo --source image --image image
