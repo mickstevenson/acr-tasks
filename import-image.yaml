@@ -5,3 +5,4 @@ alias:
 steps:
   - cmd: az login --identity
   - cmd: az account list --output table
+  - cmd: az acr import --name colesbasequarantine --source docker.io/library/alpine:3.12.0 --image docker.io/library/alpine:3.12.0
