@@ -4,7 +4,7 @@ alias:
     repo: my-website
 secrets:
   - id: name
-    keyvault: https://myacbvault2.vault.azure.net/secrets/SampleSecret
+    keyvault: https://acrimportcredentials.vault.azure.net/secrets/SampleSecret
 steps:
   - cmd: bash -c 'if [ -z "$MY_SECRET" ]; then echo "Secret not resolved"; else echo "Secret resolved"; fi'
     env: 
