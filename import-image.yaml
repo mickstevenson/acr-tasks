@@ -1,4 +1,3 @@
 version: v1.1.0
 steps:
-  - cmd: az login --identity
   - cmd: az acr import --name {{.Values.registryName}} --source {{.Values.image}} --image {{.Values.image}}
