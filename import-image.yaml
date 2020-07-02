@@ -1,0 +1,7 @@
+version: v1.1.0
+alias: 
+  values:
+    repo: colesbasequarantine
+steps:
+  - cmd: az login --identity
+  - cmd: az account list --output table
